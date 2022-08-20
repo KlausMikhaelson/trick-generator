@@ -1,9 +1,8 @@
 // Generator Modules
-import { picTextGenerator } from './generators/pic-text';
-import { gradientTextGenerator } from './generators/gradient-text';
-import { gradientBorderGenerator } from './generators/gradient-border';
-import { gradientBackgroundGenerator } from './generators/gradient-background';
-import { animationGenerator } from './generators/animation';
+import {picTextGenerator} from './generators/pic-text';
+import {gradientTextGenerator} from './generators/gradient-text';
+import {gradientBorderGenerator} from './generators/gradient-border';
+import {gradientBackgroundGenerator} from './generators/gradient-background';
 
 import * as FilePond from 'filepond';
 
@@ -86,10 +85,6 @@ function generatorsFunction(attribute: string): void {
     case 'gradient-background':
       gradientBackgroundGenerator();
       break;
-    case 'animation':
-      animationGenerator();
-      break;
-
   }
 }
 
